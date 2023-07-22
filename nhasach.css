@@ -1,0 +1,68 @@
+@font-face {
+    font-family: myfont;
+    src: url(../2251050010_DangMinhChi/fonts/VNI-Viet\ tay.ttf);
+}
+.subject{
+    font-family: myfont;
+}
+header{
+    background: linear-gradient(blue, white);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.header{
+    justify-content: space-between;
+}
+.myimg{
+    width: 120px;
+}
+.icon{
+    width: 1rem;
+}
+.ads > div {
+    border: 1.5px dashed darkblue;
+    padding: 2.5rem 0.2rem;
+}
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: bisque;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background: darkblue;
+    color: white;
+    animation-delay: 500ms;
+}
+.left {
+    width: 20%;
+    background-color: aqua;
+    height: 200px;
+}
+.right {
+    width: 80%;
+    background-color:gray;
+    height: 200px;
+}
+.v-menu{
+    flex-direction: column;
+}
+.v-menu > li {
+    width: 100%;
+}
+.v-menu {
+    background: linear-gradient(lightblue, white);
+}
+item > div {
+    width:25%
+}
+.item{
+    width: 100%;
+}
