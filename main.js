@@ -1,3 +1,6 @@
+function tai_lai_trang(){
+    location.reload();
+}
 // mình bắt đầu nhé hôm nay mic hư :)
 var canvas= document.getElementById('gamezone');
 var context= canvas.getContext('2d');
@@ -81,7 +84,7 @@ function run(){
     requestAnimationFrame(run);
 }
 //thêm function cho nó bay lên khi nhấn
-document.addEventListener("keydown",function(){
+document.addEventListener("click",function(){
     bird.y-=60;   
 })
 // ok khá ổn 
