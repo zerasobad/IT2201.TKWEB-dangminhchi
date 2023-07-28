@@ -82,7 +82,7 @@ function run(){
 }
 //thêm function cho nó bay lên khi nhấn
 document.addEventListener("click",function(){
-    bird.y-=60;   
+    bird.y-=90;   
 })
 // ok khá ổn 
 // các bạn nhớ là tọa độ trên máy tính là ở gốc trên trái đi xuống dưới 
