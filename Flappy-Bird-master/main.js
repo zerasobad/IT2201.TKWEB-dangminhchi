@@ -42,7 +42,7 @@ function run(){
         context.drawImage(ongduoi,ong[i].x,ong[i].y+khoangcachdenongduoi);
         // mình lấy vị trí ống trên cộng khoảng cách đến
         // ống dưới vì tí nữa mình random nó lên xuống
-        ong[i].x-=3; //để ống di chuyển
+        ong[i].x-=2.5; //để ống di chuyển
 
         // lập trình thêm ống khi ống di chuyển đến giữa
         // nó sẽ tạo thêm 1 ống nữa
