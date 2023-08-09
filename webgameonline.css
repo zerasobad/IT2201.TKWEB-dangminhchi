@@ -533,6 +533,26 @@ footer {
     .sidenav a {font-size: 18px;}
   }
   /*------------------------------------slider product 1-------------------------------------*/
+  .slider-product-one-content-container {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+    .heading {
+        display: block;
+        font-size: 14px;
+        width: 48%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        /* color: #fff; */
+        line-height: 24px;
+        border-radius: 5px 5px 0 0;
+        position: relative;
+        text-transform: capitalize;
+        font-weight: bold;
+        padding: 4px 0 4px 16px;
+        background-color: lightblue;
+    }
 .slider-product-one-content {
     padding: 12px;
 }
@@ -727,38 +747,3 @@ footer {
 .product-galary-one-content-title ul li:hover a{
     color: tomato;
 }
-/* ----------------------- */
-/* .container {
-    border: 1px solid black;
-    border-radius: 10px;
-  } */
-
-  .slider-product-one-content-container {
-    border: 1px solid black;
-    border-radius: 10px;
-  }
-  .title-1 {
-    border: 1px solid #ddd;
-    border-radius: 40px;
-
-  }
-  /* padding: 6px 12px;
-    border: 1px solid #ddd;
-    margin-left: 12px;
-    border-radius: 40px; */
-    .heading {
-        display: block;
-        font-size: 14px;
-        width: 48%;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        /* color: #fff; */
-        line-height: 24px;
-        border-radius: 5px 5px 0 0;
-        position: relative;
-        text-transform: capitalize;
-        font-weight: bold;
-        padding: 4px 0 4px 16px;
-        background-color: lightblue;
-    }
