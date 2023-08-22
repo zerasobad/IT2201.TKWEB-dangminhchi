@@ -66,12 +66,12 @@ fetch("data.json").then(res => res.json()).then(data => {
         `
         List.appendChild(newli);
     }
-    List = document.getElementById('listduaxe');
-    for(let a of data.duaxe){
+    List = document.getElementById('listthethao');
+    for(let a of data.thethao){
         let newli = document.createElement('li');
         newli.classList.add("item");
         newli.innerHTML=`
-        <div class="box"> 
+        <div class="box">
             <img src = "${a.src}">
             <div class="text">
             <h1>${a.name}</h1>

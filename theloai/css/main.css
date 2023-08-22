@@ -468,7 +468,6 @@ header{
 .submenu ul li {
     padding: 1px 0;
     text-align: left;
-    transition: all 0.5s ease;
 }
 .menu-bar-content ul li:hover .submenu {
     display: block;

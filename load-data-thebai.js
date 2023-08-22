@@ -66,8 +66,8 @@ fetch("data.json").then(res => res.json()).then(data => {
         `
         List.appendChild(newli);
     }
-    List = document.getElementById('listduaxe');
-    for(let a of data.duaxe){
+    List = document.getElementById('listthebai');
+    for(let a of data.thebai){
         let newli = document.createElement('li');
         newli.classList.add("item");
         newli.innerHTML=`
