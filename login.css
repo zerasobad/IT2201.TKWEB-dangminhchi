@@ -1,0 +1,164 @@
+@font-face {
+    font-family: myfonts;
+    src: url(../fonts/RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myfonts, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+.box{
+    position: relative;
+    width: 370px;
+    height: 450px;
+    background: black;
+    border-radius: 50px 5px;
+    overflow: hidden;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top:-50%;
+    left: -50%;
+    width: 370px;
+    height: 450px;
+    background: linear-gradient(60deg,transparent,#d9138a,#d9138a);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -6s;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top:-50%;
+    left: -50%;
+    width: 370px;
+    height: 450px;
+    background: linear-gradient(60deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.input-box{
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top:-5px;
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background:transparent ;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size:1.2rem;
+    line-height: 57px;
+}
+form{
+    position: absolute;
+    inset: 2px;
+    border-radius: 50px 5px;
+    background-color: #28292d;
+    z-index: 10;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    color: #45f3ff;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+.input-box{
+    position:relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.input-box input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.05rem;
+    z-index: 10;
+}
+input[type="submit"]
+{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background:#45f3ff ;
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 90px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+.links a{
+    margin: 25px 0;
+    font-size: 1em;
+    color: gray;
+    text-decoration: none;
+}
+.links a:hover,
+.links a:nth-child(2){
+    color: #45f3ff;
+}
+.links a:nth-child(2):hover
+{
+    text-decoration: underline 2px;
+    text-underline-offset: 5px;
+}
