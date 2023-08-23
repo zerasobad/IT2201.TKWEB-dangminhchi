@@ -11,7 +11,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
+    scroll-behavior: smooth;
 }
 ul {
     list-style: none;
@@ -97,6 +97,7 @@ a {
 .slider-product-one-content-item > img {
     width: 70%;
     transition: all 0.5s ease;
+    border-radius: 30px;
 }
 .slider-product-one-content-item-text {
     padding-top: 20px;
@@ -250,10 +251,10 @@ footer {
 /* aside----------------------------------------------------------------------------------------------------------- */
 .aside { flex: 0.25 0 0; } /* 2 phần aside sẽ chỉ chiếm 1 phần không gian */
 .aside-1 img{
-    width: 150px;
+    width: 100px;
 }
 .aside-2 img{
-    width: 150px;
+    width: 100px;
 }
 .aside-1 {
     cursor: pointer;
@@ -369,7 +370,86 @@ header{
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
-
+/* switch-mode */
+#switch-mode{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+}
+.dark #title{
+    color: #58C6F3;
+}
+.dark{
+    background: black;
+    color: white;
+}
+.dark header{
+    background: black;
+    color: white;
+}
+.dark .footer-custom{
+    background: black;
+}
+.dark header .logins ul li a {
+    color: white;
+}
+.dark header .btn{
+    background-color: black;
+    color: white;
+}
+.dark header .search .input{
+    background-color: orange;
+}
+.dark .first ul{
+    background-color: orange;
+    border: 1.5px solid red;
+}
+.dark .second ul{
+    border: 1.5px solid red;
+}
+.dark .box{
+    background-color: #343A40;
+    border-radius: 30px;
+}
+.dark .box h1{
+    color: lightgray;
+}
+.dark .box h2{
+    color: lightgray;
+}
+.dark .slider-product-one-content-item {
+    background-color: black;
+}
+.dark .logins ul li{
+    border: 2px solid orange;
+}
+.dark .box img{
+    border-radius: 30px ;
+}
+.dark .sidebar{
+    background-color: orange;
+}
+.dark .slider-content-left-bottom li a{
+    color: white;
+}
+.dark .container-game{
+    border: 2px solid orange;
+}
+.dark .slider-content-left{
+    border: 2px solid orange;
+}
+.dark .slider-product-one-content-container{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.dark #myBtn{
+    background-color: orange;
+}
+.dark .slider-content-right li img{
+    border-radius: 20px;
+}
 /* menu-bar---------------------------------------------------------------------------------------------------------- */
 .menu-bar ul {
     display: flex;
@@ -393,7 +473,7 @@ header{
     padding: 15px 6px;
     transition: all 0.3s ease;
 }
-.first > ul > li:nth-child(2)::before{
+.first > ul > li:nth-child(1)::before{
     position: absolute;
     content: "HotGame";
     display: block;
@@ -407,7 +487,7 @@ header{
     padding-left: 3px;
     color: white;
 }
-.first > ul > li:nth-child(2)::after {
+.first > ul > li:nth-child(1)::after {
     position: absolute;
     content: "";
     background-color: #F51212;
@@ -419,7 +499,7 @@ header{
     z-index: 0;
     transform: rotate(45deg);
 }
-.second > ul > li:nth-child(6)::before{
+.second > ul > li:nth-child(2)::before{
     position: absolute;
     content: "HotGame";
     display: block;
@@ -433,7 +513,7 @@ header{
     padding-left: 3px;
     color: white;
 }
-.second > ul > li:nth-child(6)::after {
+.second > ul > li:nth-child(2)::after {
     position: absolute;
     content: "";
     background-color: #F51212;
@@ -468,6 +548,7 @@ header{
 .submenu ul li {
     padding: 1px 0;
     text-align: left;
+    transition: all 0.5s ease;
 }
 .menu-bar-content ul li:hover .submenu {
     display: block;
@@ -540,7 +621,10 @@ header{
     line-height: 38px;
     position: relative;
     font-family: myfonts;
-
+}
+.slider-content-left-bottom li a{
+    color: black;
+    font-size: 21px;
 }
 .slider-content-left-bottom li::before {
     display: block;
@@ -569,6 +653,7 @@ header{
 .slider-content-right li img {
     height: 170px;
     width: 210px;
+    border-radius: 20px;
 }
 
 .slider-content-left-top-btn {
@@ -683,6 +768,7 @@ header{
     width:100%;
     height: 150px;
     transition: all 0.5s ease;
+    border-radius: 30px;
 }
 .box > img:hover {
     transform: translateY(-7%);
@@ -714,9 +800,9 @@ header{
     border-radius: 4px;
   }
   
-  #myBtn:hover {
+#myBtn:hover {
     background-color: #555;
-  }
+}
 /* -------------------------info_webgames--------------------------------- */     
 .popup {
     position: fixed;
@@ -734,6 +820,7 @@ header{
     margin: 100px auto;
     position: relative;
     border: 5px solid white;
+    transition: all 0.5s ease;
 }
 .close {
     position: absolute;
@@ -743,6 +830,7 @@ header{
     font-size: 30px;
     color: white;
     text-decoration: none;
+    outline: none;
 }
 .popup-content h2{
     padding: 20px;
@@ -775,7 +863,7 @@ header{
     color: #E20A16;
 }
 /* responsive------------------------------------------------------------------------------------- */
-/* laptop------------------------------------------- */
+@media (max-width: 2000px){  
     header{
         padding: 14px 2%;
         transition: .2s;
@@ -790,6 +878,24 @@ header{
     .logins-phone {
         display: none;
     }
+}
+@media (max-width: 1600px){
+    .aside-1 {
+        display: none;
+    }
+    .aside-2 {
+        display: none;
+    }
+    .imghd{
+        display: none;
+    }
+    .slider-content-right {
+        display: none;
+    }
+    .slider-content-left {
+        width: 100%;
+    }
+}
 /* ipad----------------------------------------------- */
 @media (max-width: 1100px){
     #title {
@@ -864,4 +970,6 @@ header{
     .logins-phone {
         display: block;
     }
+
+
 }
